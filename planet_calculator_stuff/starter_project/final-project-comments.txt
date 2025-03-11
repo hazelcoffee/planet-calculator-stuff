@@ -1,0 +1,37 @@
+Planet Calculation Team Project Final Instructions
+
+in the getUserFactors() function (the function where you ask for user input)
+the user needs to provide the following values
+-factorType
+-factorSystem
+-factorMeasurement
+-factorValue
+-factorPlanets
+
+1. the factorType (e.g. jump, weight, or pushups should be a trimmed string of all lower case)
+1a. if the user does not enter jump or weight or pushups exactly they should be reprompted
+with a while(true) loop. You can compare their input to an array of the appropriate strings.
+2. The user should be given a choice of metric or imperial
+3. The user should be given a measurment category of distance, mass.
+3a. If the user chooses pushups you can skip the measurement category prompt and
+hard code "repetitions"
+4. The unit will be based on their measurement system choice and category
+(e.g. metric mass is kg, imperial distance is inches)
+4. If the user does not enter a value that can be parsed to a float (isNaN)
+they should be reprompted utilizing a while(true) loop
+5. The user should be given a numeric option group of 1 or 2 for Earth solar system
+or alien solar system object. Depending on their choice pass in the correct object
+of planet system key values.
+
+If the user chooses 'jump', 'metric', 'distance', 'alien system', and '100'
+the console log should say
+// Your jump on Blurg is 122 cm
+// Your jump on Krypton is 232cm
+etc.
+
+// If a user chooses something that requires work such as jump or pushup
+// their calculation should be inverse to the gravity of the planet
+// so it would be (number of jumps / gravity factor)
+If the user chooses 'pushups', 'countable', 'metric', 20, 'earth system'
+The console should log
+// Your pushups on Mars is 15.38 repetitions
